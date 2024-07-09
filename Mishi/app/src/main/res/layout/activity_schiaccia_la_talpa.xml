@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schiaccia_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo_schiaccia"
+    tools:context=".games.SchiacciaLaTalpaActivity">
+
+    <Button
+        android:id="@+id/buttonSchiacciaStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:autoText="true"
+        android:background="@drawable/rounded_button"
+        android:text="Inizia!"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tutorialImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/tutorialImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutorial_schiaccia" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556">
+
+        <ImageView
+            android:id="@+id/talpaImageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/mole_noterra" />
+
+
+        <ImageView
+            android:id="@+id/talpaImageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/talpaImageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/mole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/negativeImageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="decreaseScore"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/negmole_noterra" />
+
+        <ImageView
+            android:id="@+id/terraImageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/terra" />
+
+        <ImageView
+            android:id="@+id/terraImageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/terra" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/tablePointImageView"
+        android:layout_width="407dp"
+        android:layout_height="59dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/time_schiaccia" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:text="Time: 10"
+        android:textAlignment="center"
+        android:textColor="#D1D1D1"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:autoSizeMaxTextSize="100dp"
+        app:autoSizeMinTextSize="12dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text=" Score: 0"
+        android:textColor="#D1D1D1"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:autoSizeMaxTextSize="100dp"
+        app:autoSizeMinTextSize="12dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

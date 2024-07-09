@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSingle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.SingleQrActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFB74D">
+
+            <ImageView
+                android:id="@+id/qrImageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/white"
+                android:contentDescription="@string/qr_code"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/captionTextView"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="@string/caption_qr"
+                android:textAlignment="center"
+                app:autoSizeMaxTextSize="100dp"
+                app:autoSizeMinTextSize="5dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qrImageView" />
+
+            <TextView
+                android:id="@+id/nomeTextViewSingleQr"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/captionTextView" />
+
+            <TextView
+                android:id="@+id/dataAcquisizioneCaptionTextView"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Data di acquisizione"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nomeTextViewSingleQr" />
+
+            <TextView
+                android:id="@+id/dataScadenzaCaptionTextView"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Data di scadenza"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dataAcquisizioneTextViewSingleQr" />
+
+            <TextView
+                android:id="@+id/valoreTextViewSingleQr"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dataScadenzaTextViewSingleQr" />
+
+            <TextView
+                android:id="@+id/dataAcquisizioneTextViewSingleQr"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dataAcquisizioneCaptionTextView" />
+
+            <TextView
+                android:id="@+id/dataScadenzaTextViewSingleQr"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dataScadenzaCaptionTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

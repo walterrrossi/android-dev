@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewCoupon"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:transitionName="shared_element_container"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        app:strokeColor="@color/material_on_surface_stroke"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="147dp">
+
+            <ImageView
+                android:id="@+id/createQrImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/qr_sample" />
+
+            <ImageView
+                android:id="@+id/typeImageView"
+                android:layout_width="74dp"
+                android:layout_height="148dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ice" />
+
+            <TextView
+                android:id="@+id/couponTextView"
+                android:layout_width="194dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:padding="0dp"
+                android:text="@string/tab_text_2"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toEndOf="@+id/logoImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/valoreTextView"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toEndOf="@+id/typeImageView"
+                app:layout_constraintTop_toBottomOf="@+id/scadenzaTextView" />
+
+            <TextView
+                android:id="@+id/scadenzaTextView"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:padding="5dp"
+                android:text="@string/data_di_scadenza"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toEndOf="@+id/typeImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dataScadTextView"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="70dp"
+                android:padding="5dp"
+                android:text="21-set-2020"
+                android:textSize="14sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="5sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toStartOf="@+id/createQrImageView"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toEndOf="@+id/scadenzaTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/logoQuadrato"
+                app:layout_constraintEnd_toEndOf="@+id/logoQuadrato"
+                app:layout_constraintStart_toStartOf="@+id/logoQuadrato"
+                app:layout_constraintTop_toTopOf="@+id/logoQuadrato"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/logoQuadrato"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                app:layout_constraintStart_toEndOf="@+id/typeImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/quadrato_bianco" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
