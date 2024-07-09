@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Mishi for Business</string>
+
+    <string name="tab_text_1">Scan</string>
+    <string name="tab_text_2">Coupon</string>
+
+    <string name="password">Password</string>
+    <string name="confirm_password">Conferma password</string>
+    <string name="email">E-mail</string>
+    <string name="registrati">Registrati</string>
+    <string name="already_registrated">Hai già un account? Accedi</string>
+    <string name="accedi">Accedi</string>
+    <string name="not_registred">Non hai un account? Registrati</string>
+
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_about">Chi siamo</string>
+    <string name="menu_logout">Disconettiti</string>
+
+    <string name="data_scad">Data di scadenza</string>
+    <string name="data_acq">Data di creazione</string>
+
+    <string name="title_activity_settings">Impostazioni</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="qr_code">QR code</string>
+    <string name="difficult">Difficoltà</string>
+    <string name="easy">Facile</string>
+    <string name="medium">Medio</string>
+    <string name="hard">Difficile</string>
+    <string name="nome_attivit">Nome Attività</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="telefono">Telefono</string>
+    <string name="indirizzo">Indirizzo</string>
+    <string name="invia_richiesta">Invia Richiesta</string>
+    <string name="inserire_un_coupon_di_questo_tipo">Inserire un coupon di questo tipo</string>
+    <string name="mishi_faber_gmail_com">mishi.faber@gmail.com</string>
+    <string name="by_faberapps">by FaberApps</string>
+</resources>

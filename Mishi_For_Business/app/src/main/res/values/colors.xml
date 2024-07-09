@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7519</color>
+    <color name="colorPrimaryDark">#FF6D00</color>
+    <color name="colorAccent">#29335C</color>
+    <color name="platinum">#F7F7F7</color>
+    <color name="tabIndicator">#29335C</color>
+    <color name="orange_past">#FFA014</color>
+    <color name="black">@android:color/black</color>
+    <color name="black_trasparent">#80000000</color>
+    <color name="active_green">#AED581</color>
+    <color name="non_active_red">#E57373</color>
+</resources>

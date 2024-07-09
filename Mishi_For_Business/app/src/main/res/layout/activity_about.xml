@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actionbar.AboutActivity">
+
+    <TextView
+        android:id="@+id/aboutNameTextView"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutByTextview"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/by_faberapps"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutNameTextView" />
+
+    <TextView
+        android:id="@+id/aboutEmailTextView"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/mishi_faber_gmail_com"
+        android:textColor="@color/black"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutByTextview" />
+
+    <ImageView
+        android:id="@+id/aboutFBImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutEmailTextView"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/aboutIGImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutFBImageView"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/aboutTwImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutIGImageView"
+        app:srcCompat="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/aboutFbTextView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toEndOf="@+id/aboutFBImageView"
+        app:layout_constraintTop_toBottomOf="@+id/aboutEmailTextView" />
+
+    <TextView
+        android:id="@+id/aboutIGTextView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toEndOf="@+id/aboutIGImageView"
+        app:layout_constraintTop_toBottomOf="@+id/aboutFbTextView" />
+
+    <TextView
+        android:id="@+id/aboutTwTextView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toEndOf="@+id/aboutTwImageView"
+        app:layout_constraintTop_toBottomOf="@+id/aboutIGTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

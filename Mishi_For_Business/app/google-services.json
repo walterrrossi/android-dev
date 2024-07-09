@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "261049939312",
+    "firebase_url": "https://mishi-18dd1.firebaseio.com",
+    "project_id": "mishi-18dd1",
+    "storage_bucket": "mishi-18dd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261049939312:android:034c3a1ca782548fcc4bb5",
+        "android_client_info": {
+          "package_name": "com.faberapps.mishi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261049939312-qbe5rqnj4keisas0u7v06vnap16jncq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQFk9gMq95DO97RI4jvx020Oo7A6PunhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261049939312-qbe5rqnj4keisas0u7v06vnap16jncq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261049939312:android:34c677a21a2106b4cc4bb5",
+        "android_client_info": {
+          "package_name": "com.faberapps.mishiforbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261049939312-qbe5rqnj4keisas0u7v06vnap16jncq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQFk9gMq95DO97RI4jvx020Oo7A6PunhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261049939312-qbe5rqnj4keisas0u7v06vnap16jncq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
